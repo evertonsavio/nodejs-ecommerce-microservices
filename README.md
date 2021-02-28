@@ -12,4 +12,10 @@ sudo docker build -t havyx/auth .
 kubectl apply -f auth-depl.yaml
 kubectl get deployments
 kubectl get services
+kubectl delete -f auth-depl.yaml
+```
+  
+* Adding Skaffold:  https://skaffold.dev/docs/install/
+```
+skaffold dev
 ```
